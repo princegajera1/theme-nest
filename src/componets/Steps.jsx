@@ -39,12 +39,12 @@ const Steps = () => {
     ];
 
     return (
-        <section className="py-20 bg-white">
+        <section className="py-5 bg-white">
             <div className="max-w-7xl mx-auto px-6">
                 
                 {/* Section Header */}
-                <div className="text-center mb-16">
-                    <h2 className="text-5xl font-extrabold text-gray-900 mb-4">
+                <div className="text-center mb-14">
+                    <h2 className="text-4xl font-bold text-gray-900 mb-2">
                         4 Easy Steps to Your Website
                     </h2>
                     <p className="text-gray-500 text-lg">
@@ -61,7 +61,7 @@ const Steps = () => {
                             className={`${step.bgColor} rounded-[2.5rem] p-8 flex flex-col h-full transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:shadow-lg`}
                         >
                             <div className="mb-6">
-                                <h3 className="text-[22px] font-extrabold text-gray-900 mb-4 leading-tight">
+                                <h3 className="text-[20px] font-bold text-gray-900 mb-4 leading-tight">
                                     {step.title}
                                 </h3>
                                 <p className="text-gray-600 text-[15px] font-medium leading-relaxed">

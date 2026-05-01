@@ -4,7 +4,9 @@ import Product from "./componets/Product";
 import Steps from "./componets/Steps";
 import Services from "./componets/Services";
 import SuccessStories from "./componets/SuccessStories";
-
+import Users from "./componets/Users";
+import FAQ from "./componets/FAQ";
+import Footer from "./componets/Footer";
 
 const App = () => {
   return (
@@ -15,6 +17,9 @@ const App = () => {
       <Steps />
       <Services />
       <SuccessStories />
+      <Users />
+      <FAQ />
+      <Footer />
     </>
   );
 };

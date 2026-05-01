@@ -57,7 +57,7 @@ const SuccessStories = () => {
                 
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-[36px] md:text-[48px] font-bold text-gray-900 mb-3 tracking-tight">
+                    <h2 className="text-[30px] md:text-[40px] font-bold text-gray-800 mb-3 tracking-tight">
                         Success Stories We're Proud Of
                     </h2>
                     <p className="text-gray-500 text-base md:text-lg font-normal">
@@ -72,11 +72,11 @@ const SuccessStories = () => {
                             key={item.id} 
                             className={`bg-white p-8 rounded-[2rem] shadow-[0_10px_40px_rgba(96,57,255,0.05)] border border-gray-100 min-w-[260px] md:min-w-[280px] text-center transition-all duration-500 hover:-translate-y-2 cursor-pointer ${index === 1 ? 'md:-mt-10' : ''}`}
                         >
-                            <h3 className="text-[48px] font-extrabold text-[#6039ff] mb-1 leading-none tracking-tight">
+                            <h3 className="text-[35px] font-extrabold text-[#6039ff] mb-1 leading-none tracking-tight">
                                 <ManualCounter end={item.number} />
                                 {item.suffix}
                             </h3>
-                            <p className="text-gray-500 text-[16px] font-semibold uppercase tracking-wider">
+                            <p className="text-gray-500 text-[15px] font-semibold uppercase tracking-wider">
                                 {item.label}
                             </p>
                         </div>
