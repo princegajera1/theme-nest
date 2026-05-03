@@ -1,27 +1,70 @@
-import Header1 from "./componets/header-1";
-import Hero1 from "./componets/Hero-1";
-import Product from "./componets/Product";
-import Steps from "./componets/Steps";
-import Services from "./componets/Services";
-import SuccessStories from "./componets/SuccessStories";
-import Users from "./componets/Users";
-import FAQ from "./componets/FAQ";
-import Footer from "./componets/Footer";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  // useLocation,
+} from "react-router-dom";
+
+import ScrollToTop from "./componets/ScrollToTop";
+import About from "./pages/About";
+import Homepage from "./componets/Homepage";
+import Servicesp from "./pages/Servicesp";
+import Blog from "./pages/Blog";
+import ProductsPage from "./pages/Products";
+import ContactUs from "./pages/ContactUs";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import ForgotPassword from "./pages/ForgotPassword";
+import PrivacyPolicy from "./pages/PolicyPage";
+import HelpCenter from "./pages/HelpCenter";
+import WhatsNew from "./pages/WhatsNew";
+import Recommendations from "./pages/Recommendations";
+import FaqPage from "./pages/FaqPage";
+import BusinessTemplates from "./pages/BusinessTemplates";
+import EcommerceTemplates from "./pages/EcommerceTemplates";
+import PortfolioTemplates from "./pages/PortfolioTemplates";
+import EducationTemplates from "./pages/EducationTemplates";
 
 const App = () => {
+  // const location = useLocation(); // current URL path check karva mate
+
   return (
     <>
-      <Header1 />
-      <Hero1 />
-      <Product />
-      <Steps />
-      <Services />
-      <SuccessStories />
-      <Users />
-      <FAQ />
-      <Footer />
+      <Routes>
+        {/* Home Page */}
+        <Route path="/" element={<Homepage />} />
+
+        {/* About Page */}
+        <Route path="/about" element={<About />} />
+
+        <Route path="/service" element={<Servicesp />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/help-center" element={<HelpCenter />} />
+        <Route path="/whats-new" element={<WhatsNew />} />
+        <Route path="/recommendations" element={<Recommendations />} />
+        <Route path="/faq" element={<FaqPage />} />
+        <Route path="/business-templates" element={<BusinessTemplates />} />
+        <Route path="/ecommerce-templates" element={<EcommerceTemplates />} />
+        <Route path="/portfolio-templates" element={<PortfolioTemplates />} />
+        <Route path="/education-templates" element={<EducationTemplates />} />
+      </Routes>
+
+      {/* {location.pathname !== "/about" && <Footer />} */}
     </>
   );
 };
 
-export default App;
+const RootApp = () => (
+  <Router>
+    <ScrollToTop />
+    <App />
+  </Router>
+);
+
+export default RootApp;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaFacebookF, FaYoutube, FaLinkedinIn, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaChevronUp } from 'react-icons/fa';
 
 const Footer = () => {
@@ -41,7 +42,7 @@ const Footer = () => {
         {/* 2. THEMENEST.AI HEADER & SOCIAL (Section upar) */}
         <div className="mb-12">
           <h3 className="text-3xl font-bold text-gray-900 mb-4">
-            <span className="text-[#6366f1]">Theme</span>Nest.ai
+            <span className="text-[#6366f1]">Theme</span>Nest
           </h3>
           <p className="text-gray-500 text-[16px] mb-6 max-w-lg font-medium">
             Helping brands build stunning websites and grow their digital presence with ease.
@@ -65,29 +66,29 @@ const Footer = () => {
           <div className="space-y-6">
             <h4 className="font-bold text-gray-900 text-[18px] uppercase">Company</h4>
             <ul className="space-y-4 text-gray-500 font-bold">
-              <li className="hover:text-[#6366f1] cursor-pointer">About Us</li>
-              <li className="hover:text-[#6366f1] cursor-pointer">Contact Us</li>
-              <li className="hover:text-[#6366f1] cursor-pointer">Privacy Policy</li>
-              <li className="hover:text-[#6366f1] cursor-pointer">Help Center</li>
+              <li><Link to="/about" className="hover:text-[#6366f1] block transition-colors">About Us</Link></li>
+              <li><Link to="/contact" className="hover:text-[#6366f1] block transition-colors">Contact Us</Link></li>
+              <li><Link to="/privacy-policy" className="hover:text-[#6366f1] block transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/help-center" className="hover:text-[#6366f1] block transition-colors">Help Center</Link></li>
             </ul>
           </div>
 
           <div className="space-y-6">
             <h4 className="font-bold text-gray-900 text-[18px] uppercase">Resources</h4>
             <ul className="space-y-4 text-gray-500 font-bold">
-              <li className="hover:text-[#6366f1] cursor-pointer">What's New</li>
-              <li className="hover:text-[#6366f1] cursor-pointer">Recommendations</li>
-              <li className="hover:text-[#6366f1] cursor-pointer">FAQ</li>
+              <li><Link to="/whats-new" className="hover:text-[#6366f1] block transition-colors">What's New</Link></li>
+              <li><Link to="/recommendations" className="hover:text-[#6366f1] block transition-colors">Recommendations</Link></li>
+              <li><Link to="/faq" className="hover:text-[#6366f1] block transition-colors">FAQ</Link></li>
             </ul>
           </div>
 
           <div className="space-y-6">
             <h4 className="font-bold text-gray-900 text-[18px] uppercase">Quick Links</h4>
             <ul className="space-y-4 text-gray-500 font-bold">
-              <li className="hover:text-[#6366f1] cursor-pointer">Business Templates</li>
-              <li className="hover:text-[#6366f1] cursor-pointer">E-Commerce Templates</li>
-              <li className="hover:text-[#6366f1] cursor-pointer">Portfolio Templates</li>
-              <li className="hover:text-[#6366f1] cursor-pointer">Education Templates</li>
+              <li><Link to="/business-templates" className="hover:text-[#6366f1] block transition-colors">Business Templates</Link></li>
+              <li><Link to="/ecommerce-templates" className="hover:text-[#6366f1] block transition-colors">E-Commerce Templates</Link></li>
+              <li><Link to="/portfolio-templates" className="hover:text-[#6366f1] block transition-colors">Portfolio Templates</Link></li>
+              <li><Link to="/education-templates" className="hover:text-[#6366f1] block transition-colors">Education Templates</Link></li>
             </ul>
           </div>
 
@@ -119,14 +120,14 @@ const Footer = () => {
         {/* 4. BOTTOM COPYRIGHT BAR */}
         <div className="pt-8 border-t border-gray-100 flex flex-col md:row justify-between items-center gap-4">
           <p className="text-gray-400 text-[14px] font-medium">
-            © 2026 ThemeNest.ai. All rights reserved.
+            © 2026 Prince Gajera. All rights reserved.
           </p>
           
           <div className="flex items-center gap-1 text-gray-400 text-[14px] font-medium">
             <span>Made with</span>
             <span className="text-red-500 mx-1">❤️</span>
             <span>by</span>
-            <span className="font-bold text-gray-600 ml-1">themenest</span>
+            <span className="font-bold text-gray-600 ml-1">Prince Gajera</span>
           </div>
           
           
