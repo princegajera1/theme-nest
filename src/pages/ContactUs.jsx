@@ -39,7 +39,7 @@ const ContactUs = () => {
 
             {/* Contact Form */}
             <div className="lg:w-2/3 lg:pl-8">
-              <form action="https://formsubmit.co/your_email@gmail.com" method="POST" className="space-y-6">
+              <form action="https://formsubmit.co/princegajera944@gmail.com" method="POST" className="space-y-6">
                 {/* Security and redirection fields for FormSubmit */}
                 <input type="text" name="_honey" style={{ display: 'none' }} />
                 <input type="hidden" name="_captcha" value="false" />
